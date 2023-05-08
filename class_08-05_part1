@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+// exemplo de passagens de argumento ou valor
+
+int maior(int x, int y) {
+    int maior;
+    if (x > y)
+      maior = x;
+       else 
+         maior = y;
+         return maior;
+}
+
+void main() {
+
+int resultado = 0;
+int a = 100;
+int b = 200;
+resultado = maior (25, 10);
+printf("O maior resultado é = %d\n", resultado);
+ resultado = maior (a, b);
+ printf("O maior resultado é = %d\n", resultado);
+
+ int c = 10;
+
+// chamada por referência 
+int c = 10;
+chamada_por_referencia(&c); 
+
+printf("\n O valor de a = %d", a);
+
+}
