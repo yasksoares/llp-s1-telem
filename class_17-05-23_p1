@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+/* Files
+
+Arquivo é um objeto controlado pelo sistema operacional. 
+Ele pressupõe a existência de um dispositivo físico onde
+eles serão gravados. */
+
+// Podemos entender uma fila grande de bits
+
+// O drive é peculiar a cada sistema operacional
+
+
+/* S.O
+
+- open
+- read 
+- write
+- close */
+
+/*
+um ponteiro é uma variável que armazena o endereço de memória de outra variável. Em vez de armazenar diretamente um valor, um ponteiro armazena o endereço onde o valor está localizado na memória. */
+
+FILE *fptr;
+
+//creat a file on your computter (filename.txt)
+
+fptr = fopen("filename.txt", "w");
+
+fprintf (fptr, "some text");
+
+//close file
+fclose(fptr);
+
+return 0;
+}
